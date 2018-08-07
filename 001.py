@@ -1,4 +1,4 @@
-def get_fib_series(n=10):
+def get_fib_series(n=100):
     # Secuencia regular fibonacci
     fib = [0, 1]
 
