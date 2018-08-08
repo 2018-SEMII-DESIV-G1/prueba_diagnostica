@@ -1,10 +1,10 @@
-def get_fib_series(n=100):
+def get_fib_series(n=5):
     # Secuencia regular fibonacci
     fib = [0, 1]
 
     # Secuencia de fibonacci sólo con impares
-    resfib = [0, 1]
-    
+    resfib = [1, ]
+
     # El i empieza en 2 porque estoy ignorando los 2
     # primeros elementos del array "fib", ya que
     # siempre son 0 y 1.
@@ -20,10 +20,11 @@ def get_fib_series(n=100):
             resfib.append(_n)
         # Seguimos añadiendo siempre a la secuencia
         fib.append(_n)
-        # Incrementamos el contador de elementos de toda la 
+        # Incrementamos el contador de elementos de toda la
         # serie fibonacci.
         i += 1
     return resfib, fib
+
 
 def main():
     resfib, fib = get_fib_series()
@@ -36,6 +37,7 @@ def main():
     print(fib)
     print('\nEl resultado de la suma de todos los elementos '
           'impares es de: ' + str(resultado))
+
 
 if __name__ == '__main__':
     main()
